@@ -5,7 +5,7 @@ from agno.tools.youtube import YouTubeTools
 from agno.models.google import Gemini
 def agent_int():
     ag =  Agent(
-        model=Gemini(id="gemini-2.0-flash-exp", api_key='AIzaSyDWUk0f_nYQ2NDUHWKfmDquUbMeCozXs-g'),
+        model=Gemini(id="gemini-2.0-flash-exp", api_key='Your API Key'),
         description="You are a YouTube agent. Obtain the captions of a YouTube video and answer questions.",
         session_id="streamlit_session",
         storage=SqliteStorage(table_name="agent_sessions", db_file="tmp/data.db"),
